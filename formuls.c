@@ -17,18 +17,18 @@ int cosinus (Point A, Point B, Point C)
 	cos2 = (A.x-B.x)*(C.x-B.x)+(A.y-B.y)*(C.y-B.y);	
 	if (cos1>=0&&cos2>=0)
 	{
-		return 0; //если 0, то треуг - остроугольный
+		return 0; 
 	}
 	else
 	{
-		return 1;//тупоугольный
+		return 1;
 	} 
 }
   
 double ro(Point P, double A, double B, double C)
 {
 	double R;
-	R = fabs(A*P.x+B*P.y+C)/pow(A*A+B*B, 0.5);//функция, считающая расстояние от точки до прямой	
+	R = fabs(A*P.x+B*P.y+C)/pow(A*A+B*B, 0.5);	
 	return R;
 }
 
